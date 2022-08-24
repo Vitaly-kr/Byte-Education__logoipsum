@@ -1,5 +1,5 @@
 body {
-font-family: 'DM Sans', sans-serif;
+    font-family: 'DM Sans', sans-serif;
 }
 
 .container {
@@ -12,11 +12,15 @@ font-family: 'DM Sans', sans-serif;
     padding: 38px 0 48px;
 }
 
-.header__flex, .footer__flex, .about {
-    display: flex;    
+.header__flex,
+.footer__flex,
+.about,
+.subscribe {
+    display: flex;
     justify-content: space-between;
     align-items: center;
 }
+
 .nav__li {
     display: inline-block;
 }
@@ -62,7 +66,7 @@ font-family: 'DM Sans', sans-serif;
     transition: 500ms;
 }
 
-.about {    
+.about {
     margin: 104px auto 85px;
 }
 
@@ -113,4 +117,39 @@ font-family: 'DM Sans', sans-serif;
 
 .nav__footer-li:not(:first-of-type) {
     margin-left: 49px;
+}
+
+.subscribe {
+    margin-bottom: 85px;
+}
+
+.subscribe__title {
+    font-weight: bold;
+    font-size: 50px;
+    line-height: 57px;
+    letter-spacing: -1.56316px;
+    color: #19191B;
+    margin-bottom: 38px;
+}
+
+.input {
+    width: 302px;
+    height: 60px;
+    border-radius: 10px;
+    border: 1px solid #7087ff;
+    padding-left: 14px;
+    box-sizing: border-box;
+    margin-right: 39px
+}
+
+.input::placeholder, .input {
+    font-weight: 700;
+    font-size: 17px;
+    line-height: 22px;
+    letter-spacing: -0.531474px;
+    color: #000000;
+}
+
+.input:focus{
+    outline: none;
 }
